@@ -21,6 +21,8 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+ORDER: Base + typography > general layout + grid > page layout > components
+
 1em = 16px
 Kaže da je za media querry bolje koristiti em nego rem. U media query em i rem gledaju defaultni font-size browsera a ne od html-a ili roota ili koji mi definiramo
 */
