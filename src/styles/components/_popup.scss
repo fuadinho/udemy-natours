@@ -23,28 +23,51 @@
         transition: all 0.5s 0.2s;
 
         // Solucija sa flexom
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
 
         //Solucija sa tabel property
-        display: table;
+        // display: table;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            width: 90%;
+        }
     }
 
     &__left {
         width: 33.333333%;
-        display: table-cell;
+        // display: flex;
+        // flex-direction: column;
+        // display: table-cell;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     &__right {
         width: 66.666667%;
-        padding: 3rem 5rem;
-        display: table-cell;
-        vertical-align: middle;
+        padding: 1rem 4rem;
+        // display: table-cell;
+        // vertical-align: middle;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 2.5rem 4rem;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+        height: auto;
+
+        @include respond(tab-port) {
+            width: 50%;
+        }
     }
 
     &__text {
