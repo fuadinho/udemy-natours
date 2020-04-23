@@ -78,9 +78,23 @@
 
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="src/img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+            <img srcset="src/img/nat-1.jpg 300vw, src/img/nat-1-large.jpg 1000vw"
+              sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
+              class="composition__photo composition__photo--p1" src="src/img/nat-1-large.jpg">
+
+            <img srcset="src/img/nat-2.jpg 300vw, src/img/nat-2-large.jpg 1000vw"
+              sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
+              class="composition__photo composition__photo--p2" src="src/img/nat-2-large.jpg">
+
+            <img srcset="src/img/nat-3.jpg 300vw, src/img/nat-3-large.jpg 1000vw"
+              sizes="(max-width: 56.5em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
+              class="composition__photo composition__photo--p3" src="src/img/nat-3-large.jpg">
+
+
+            <!-- <img src="src/img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
             <img src="src/img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-            <img src="src/img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+            <img src="src/img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
           </div>
         </div>
       </div>
@@ -342,7 +356,16 @@
 
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="src/img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+      <picture class="footer__logo">
+        <source srcset="src/img/logo-green-small-1x.png 1x, src/img/logo-green-small-2x.png 2x"
+          media="(max-width: 37.5em)">
+        <img srcset="src/img/logo-green-1x.png 1x, src/img/logo-green-2x.png 2x" alt="Full logo"
+          src="src/img/logo-green-2x.png">
+      </picture>
+
+
+      <!-- <img srcset="src/img/logo-green-1x.png 1x, src/img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"> -->
     </div>
 
     <div class="row">
